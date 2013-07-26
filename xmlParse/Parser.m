@@ -85,7 +85,7 @@
 }
 
 -(void)parserDidEndDocument:(NSXMLParser *)parser {
-    NSLog(@"didEndDocument");
+    NSLog(@"didEndDocuments");
 }
 
 // error handling
