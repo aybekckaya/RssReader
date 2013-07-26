@@ -18,7 +18,17 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    Parser *myParser=[Parser SharedParser];
+    
+    NSString *UrlStr=@"http://rss.news.yahoo.com/rss/";
+    
+    [myParser ParseDocumentInURL:UrlStr];
+   
 }
+
+
+
 
 - (void)didReceiveMemoryWarning
 {

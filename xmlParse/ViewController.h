@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Parser.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<NSXMLParserDelegate>
+{
+    
+    
+    
+}
 
 @end
