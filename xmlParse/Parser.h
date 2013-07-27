@@ -9,11 +9,15 @@
 #import <Foundation/Foundation.h>
 #import "TFNetwork.h"
 #import "TFStrings.h"
+#import "XMLDictionary.h"
+#import "Entry.h"
 
 @interface Parser : NSObject<NSXMLParserDelegate,TFNetworkDelegate>
 {
     TFNetwork *network;
     NSXMLParser *parser;
+    
+    NSMutableArray *Entries;
 }
 
 +(Parser *)SharedParser;

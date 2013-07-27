@@ -53,12 +53,25 @@
     }
     
     // Test String
-    //NSString *strdata=[TFStrings DataToString:ResponseData]; // Will Parse this data
+    NSString *strdata=[TFStrings DataToString:ResponseData]; // Will Parse this data
+    NSDictionary *dict=[NSDictionary dictionaryWithXMLString:strdata];
+   
+  NSArray *EntriesRaw=[[dict objectForKey:@"channel"]objectForKey:@"item"];
     
-    parser=[[NSXMLParser alloc]initWithData:ResponseData];
-    parser.delegate=self;
-    
-    [parser parse];
+   // create entries
+    Entries=[[NSMutableArray alloc]init];
+    for(NSDictionary *EntryCandidate in EntriesRaw)
+    {
+        NSLog(@"%@",[EntryCandidate description]);
+        Entry *entry=[[Entry alloc]init];
+        entry.description=[EntryCandidate objectForKey:@"description"];
+        entry.title=[EntryCandidate objectForKey:@"title"];
+       // NSLog(@"Entry Desc: %@",[entry title]);
+        entry.publishDateStr=[EntryCandidate objectForKey:@"pubDate"];
+        NSArray *imgDataArr=[EntryCandidate objectForKey:@"enclosure"];
+        entry.imageStr=[[imgDataArr objectAtIndex:0]objectForKey:@"_url"];
+        
+    }
     
 }
 
@@ -67,37 +80,7 @@
 
 
 
-#pragma NSXmlParser Delegates
 
-- (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict{
-    
-}
-- (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string{
-    
-}
-
--(void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName{
-   
-}
-
--(void)parserDidStartDocument:(NSXMLParser *)parser {
-    NSLog(@"didStartDocuments");
-}
-
--(void)parserDidEndDocument:(NSXMLParser *)parser {
-    NSLog(@"didEndDocuments");
-}
-
-// error handling
--(void)parser:(NSXMLParser *)parser parseErrorOccurred:(NSError *)parseError {
-    NSLog(@"XMLParser error: %@", [parseError localizedDescription]);
-}
-
--(void)parser:(NSXMLParser *)parser validationErrorOccurred:(NSError *)validationError {
-    NSLog(@"XMLParser error: %@", [validationError localizedDescription]);
-}
-
-#pragma END NSXmlParser Delegate END
 
 
 

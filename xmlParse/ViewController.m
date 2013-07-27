@@ -23,6 +23,8 @@
     
     NSString *UrlStr=@"http://rss.news.yahoo.com/rss/";
     
+    UrlStr=@"http://www.deardiary-fashion.com/feed/";
+    
     [myParser ParseDocumentInURL:UrlStr];
    
 }

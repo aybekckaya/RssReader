@@ -36,6 +36,8 @@
 		A31346D217A2B0BA002691D4 /* TFNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = A31346C717A2B0BA002691D4 /* TFNetwork.m */; };
 		A31346D317A2B0BA002691D4 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = A31346C917A2B0BA002691D4 /* UIImageView+AFNetworking.m */; };
 		A31346D617A2CC54002691D4 /* TFStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = A31346D517A2CC54002691D4 /* TFStrings.m */; };
+		A3C1A64817A376660008A33D /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = A3C1A64717A376660008A33D /* XMLDictionary.m */; };
+		A3C1A64B17A37CFB0008A33D /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = A3C1A64A17A37CFB0008A33D /* Entry.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +100,10 @@
 		A31346C917A2B0BA002691D4 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "xmlParse/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 		A31346D417A2CC54002691D4 /* TFStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFStrings.h; sourceTree = "<group>"; };
 		A31346D517A2CC54002691D4 /* TFStrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFStrings.m; sourceTree = "<group>"; };
+		A3C1A64617A376660008A33D /* XMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDictionary.h; sourceTree = "<group>"; };
+		A3C1A64717A376660008A33D /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDictionary.m; sourceTree = "<group>"; };
+		A3C1A64917A37CFB0008A33D /* Entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
+		A3C1A64A17A37CFB0008A33D /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,10 +213,14 @@
 		A31346B017A2B002002691D4 /* Parser */ = {
 			isa = PBXGroup;
 			children = (
+				A3C1A64617A376660008A33D /* XMLDictionary.h */,
+				A3C1A64717A376660008A33D /* XMLDictionary.m */,
 				A31346D417A2CC54002691D4 /* TFStrings.h */,
 				A31346D517A2CC54002691D4 /* TFStrings.m */,
 				A31346AD17A2AA17002691D4 /* Parser.h */,
 				A31346AE17A2AA17002691D4 /* Parser.m */,
+				A3C1A64917A37CFB0008A33D /* Entry.h */,
+				A3C1A64A17A37CFB0008A33D /* Entry.m */,
 			);
 			name = Parser;
 			sourceTree = "<group>";
@@ -369,6 +379,8 @@
 				A31346D217A2B0BA002691D4 /* TFNetwork.m in Sources */,
 				A31346D317A2B0BA002691D4 /* UIImageView+AFNetworking.m in Sources */,
 				A31346D617A2CC54002691D4 /* TFStrings.m in Sources */,
+				A3C1A64817A376660008A33D /* XMLDictionary.m in Sources */,
+				A3C1A64B17A37CFB0008A33D /* Entry.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,6 +561,7 @@
 				A31346A617A2A6CE002691D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A31346A717A2A6CE002691D4 /* Build configuration list for PBXNativeTarget "xmlParseTests" */ = {
 			isa = XCConfigurationList;
@@ -557,6 +570,7 @@
 				A31346A917A2A6CE002691D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -112,12 +112,12 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "xmlParse/Parser.m"
-         timestampString = "396546137.902038"
+         timestampString = "396588736.532671"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "73"
-         endingLineNumber = "73"
-         landmarkName = "-parser:didStartElement:namespaceURI:qualifiedName:attributes:"
+         startingLineNumber = "57"
+         endingLineNumber = "57"
+         landmarkName = "-NetworkDidEndFetcing:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -125,12 +125,12 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "xmlParse/Parser.m"
-         timestampString = "396546139.012846"
+         timestampString = "396590956.772629"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "76"
-         endingLineNumber = "76"
-         landmarkName = "-parser:foundCharacters:"
+         startingLineNumber = "63"
+         endingLineNumber = "63"
+         landmarkName = "-NetworkDidEndFetcing:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -138,12 +138,38 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "xmlParse/Parser.m"
-         timestampString = "396546140.149048"
+         timestampString = "396591156.978372"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "80"
-         endingLineNumber = "80"
-         landmarkName = "-parser:didEndElement:namespaceURI:qualifiedName:"
+         startingLineNumber = "71"
+         endingLineNumber = "71"
+         landmarkName = "-NetworkDidEndFetcing:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "xmlParse/Parser.m"
+         timestampString = "396591156.978372"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "66"
+         endingLineNumber = "66"
+         landmarkName = "-NetworkDidEndFetcing:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "xmlParse/Parser.m"
+         timestampString = "396591212.972535"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "69"
+         endingLineNumber = "69"
+         landmarkName = "-NetworkDidEndFetcing:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
